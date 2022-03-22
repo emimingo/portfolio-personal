@@ -1,0 +1,94 @@
+:root{
+    --background-sections: #def5e7;
+    --background-header:  #209A6C;
+    --background-buttons: #a9d4c4;
+    --background-buttons-hover: #61d8ac;
+    --font-color-primary: #2b2b2b;
+    --font-color-header: #F5F5F5;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #F5F5F5;
+    color: var(--font-color-primary);
+}
+
+section{
+    
+    padding: 6rem 0 6rem 0;
+}
+.container{
+    margin: 0 auto;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+h3{
+    /* font-size: 1.5rem; */ 
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    border-radius: 0.25rem;
+    padding: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.button{
+    background: var(--background-header);
+    padding: 1rem;
+    color: var(--font-color-header);
+}
+
+.fa-html5{
+    color: #E55F28;
+}
+
+.fa-css3-alt{
+    color: #06A2D8;
+}
+
+.fa-js-square{
+    color: #F1D100;;
+}
+
+@media screen and (min-width: 1024px){
+
+    html{
+        font-size: 16px;
+    }
+
+    .container{
+        max-width: 1080px;
+    }
+
+    section{
+        padding: 5rem 0 5rem 0;
+    }
+
+    .button:hover{
+        box-shadow: 1px 2px 10px grey;
+        
+        transition: 0.3s;
+    }
+}

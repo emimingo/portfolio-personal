@@ -1,0 +1,46 @@
+.hobbies{
+    background: #d3f7e1;
+    
+}
+
+.hobbies__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+}
+
+.hobbies__box{
+    background-color: whitesmoke;
+}
+
+.hobbies__card{
+    align-items: center;
+
+}
+
+.hobbies__card i{
+    font-size: 4rem;
+    color: #afdfc1;
+}
+
+@media screen and (min-width: 480px){
+    .hobbies__container{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .hobbies__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hobbies__box:hover {
+        box-shadow: 2px 3px 20px grey;
+        transform: scale(1.03);
+        transition: 0.3s;
+        border-radius: 2%;
+    }
+}

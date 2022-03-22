@@ -1,0 +1,133 @@
+.about{
+    margin-top: 68px; 
+}
+
+
+.presentation{
+    background: var(--background-sections);
+    /* padding: 4rem 0 4rem 0; */
+}
+/* .about .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+.about__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    justify-items: center;
+}
+
+
+.about__profile{
+    height: 200px;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    
+}
+
+.about__me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.about__me .social {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; 
+    align-self: flex-start;
+}
+
+.about__me .social a {
+    margin-top: 1px;
+    opacity: 0.4;
+    
+}
+
+.about__name{
+    font-size: 2rem;
+}
+.about__name,
+.about__button{
+    align-self: flex-start;
+}
+
+
+
+.about__description{
+    display: block;
+    /* text-align: justify; */
+}
+
+/* .about__info{
+    width: 60%;
+} */
+
+.about__title.title{
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    /* margin-top: 2rem; */
+}
+
+.about__signature{
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+@media screen and (min-width: 480px){
+
+    .about__container{
+        grid-template-columns: 1fr 1.5fr;
+        align-items: center;
+        direction: rtl; 
+    }
+
+    .about__profile{
+        height: 250px;
+        justify-self: flex-start;  
+    }
+
+    .about__me{
+        text-align: left; 
+    }
+
+    .about__me .social{
+        align-self: flex-end;
+    }
+
+    .about__name,
+    .about__button{
+        align-self: flex-end;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .about__profile{
+        height: 300px;
+    }
+
+    .about__name{
+        font-size: 2rem;
+    }
+
+    .about__info{
+        width: 60%;
+    }
+
+    .about__me .social a:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        transition: .3s;
+    }
+
+}
